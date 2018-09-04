@@ -11,8 +11,10 @@ def longestCommonPrefix(strs):
     :type strs: List[str]
     :rtype: str
     """
-    if len(strs) <= 1:
-        return ''
+    if len(strs) == 1:
+        return strs[0]
+    if len(strs) == 0:
+        return ''    
     count = 0
     flag = 1
 
